@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" date-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- font awesome cdn link -->
+    <script src="https://kit.fontawesome.com/3ee5fd7562.js" crossorigin="anonymous"></script>    <!-- daisy ui cnd link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-300">
+
+    <!-- this about the navbar section -->
+    <header  class="mb-4">
+        <nav class="container mx-auto">
+            <div class="navbar bg-base-100 shadow-sm rounded-lg">
+                <div class="flex-1 flex items-center">
+                    <img class="ml-2 w-7" src="assets/logo.png" alt="">
+                    <a class="btn btn-ghost text-xl font-normal -mx-2">Dev<span class="font-bold -mx-1">Board</span></a>
+                </div>
+                <div class="flex gap-5">
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost flex gap-3 items-center bg-slate-100 rounded-3xl">
+                        <input class="bg-blue-500 size-5" type="checkbox" checked="checked" class="checkbox" />
+                        <p class="text-xl font-bold">23</p>
+                    </div>
+                  </div>
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full mr-1">
+                        <img
+                          alt="Tailwind CSS Navbar component"
+                          src="assets/theme-btn.png" />
+                      </div>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                      <li>
+                        <a class="justify-between">
+                          Profile
+                          <span class="badge">New</span>
+                        </a>
+                      </li>
+                      <li><a>Settings</a></li>
+                      <li><a>Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <!-- this about the main section -->
+     <main class="container mx-auto grid grid-cols-4 gap-4">
+        <div class="rounded-lg bg-base-200 mb-4 col-span-3 p-4">\
+            <!-- some task and date section -->
+            <div class=" grid grid-cols-4 gap-2">
+            <!-- task assign -->
+              <div class="flex items-center gap-4 px-3 py-5 rounded-lg bg-slate-200">
+                <button class="btn btn-circle bg-white">
+                    <input class="bg-blue-500 size-4" type="checkbox" checked="checked" class="checkbox" />
+                </button>
+                <div>
+                    <p class="text-indigo-900 text-sm">Task Assigned</p>
+                    <h2 class="text-2xl font-bold">05</h2>
+                </div>
+              </div>
+                <!-- discover something today section -->
+              <div class="flex items-center gap-4 px-3 py-5 rounded-lg col-span-2 bg-gradient-to-r from-blue-500 to-blue-300">
+                <img class="w-12" src="assets/board.png" alt="">
+                <p class="text-white text-xl font-medium">Discover Something New Today!</p>
+              </div>
+              <!-- date section on the  -->
+              <div class="flex items-center gap-4 px-3 py-5 rounded-lg bg-slate-200">
+                <button class="btn btn-circle bg-white">
+                    <i class="fa-solid fa-calendar-days text-lg"></i>
+                </button>
+                <div>
+                    <p class="text-indigo-900 text-sm">Wed,</p>
+                    <h2 class="text-md font-bold">Jul 28 2025</h2>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div>
+            <ul class="list bg-base-100 rounded-box shadow-md">
+  
+                <li class="p-4 pb-2 text-xs opacity-60 tracking-wide">Most played songs this week</li>
+                
+                <li class="list-row">
+                  <div><img class="size-10 rounded-box" src="https://img.daisyui.com/images/profile/demo/1@94.webp"/></div>
+                  <div>
+                    <div>Dio Lupa</div>
+                    <div class="text-xs uppercase font-semibold opacity-60">Remaining Reason</div>
+                  </div>
+                  <button class="btn btn-square btn-ghost">
+                    <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor"><path d="M6 3L20 12 6 21 6 3z"></path></g></svg>
+                  </button>
+                  <button class="btn btn-square btn-ghost">
+                    <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></g></svg>
+                  </button>
+                </li>
+                
+                <li class="list-row">
+                  <div><img class="size-10 rounded-box" src="https://img.daisyui.com/images/profile/demo/4@94.webp"/></div>
+                  <div>
+                    <div>Ellie Beilish</div>
+                    <div class="text-xs uppercase font-semibold opacity-60">Bears of a fever</div>
+                  </div>
+                  <button class="btn btn-square btn-ghost">
+                    <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor"><path d="M6 3L20 12 6 21 6 3z"></path></g></svg>
+                  </button>
+                  <button class="btn btn-square btn-ghost">
+                    <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></g></svg>
+                  </button>
+                </li>
+                
+                <li class="list-row">
+                  <div><img class="size-10 rounded-box" src="https://img.daisyui.com/images/profile/demo/3@94.webp"/></div>
+                  <div>
+                    <div>Sabrino Gardener</div>
+                    <div class="text-xs uppercase font-semibold opacity-60">Cappuccino</div>
+                  </div>
+                  <button class="btn btn-square btn-ghost">
+                    <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor"><path d="M6 3L20 12 6 21 6 3z"></path></g></svg>
+                  </button>
+                  <button class="btn btn-square btn-ghost">
+                    <svg class="size-[1.2em]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="currentColor"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></g></svg>
+                  </button>
+                </li>
+                
+              </ul>
+        </div>
+     </main>
+</body>
+</html>
