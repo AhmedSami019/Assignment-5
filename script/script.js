@@ -31,7 +31,7 @@ getBtnClickResultById("btn-6");
 document
   .getElementById("discover-new")
   .addEventListener("click", function (event) {
-    window.location.href = "../blog.html";
+    window.location.href = "./blog.html";
   });
 
 // getting the date and day in the top of the main section
