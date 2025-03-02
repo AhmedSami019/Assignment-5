@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-slate-300">
+<body id="body">
 
     <!-- this about the navbar section -->
     <header  class="mb-4">
@@ -18,7 +18,7 @@
             <div class="navbar bg-base-100 shadow-sm rounded-lg">
                 <div class="flex-1 flex items-center">
                     <img class="ml-2 w-7" src="assets/logo.png" alt="">
-                    <a class="btn btn-ghost text-xl font-normal -mx-2">Dev<span class="font-bold -mx-1">Board</span></a>
+                    <a class="text-xl font-normal mx-1">Dev<span class="font-bold">Board</span></a>
                 </div>
                 <div class="flex gap-5">
                   <div class="dropdown dropdown-end">
@@ -27,27 +27,15 @@
                         <p id="navbar-count" class="text-xl font-bold">23</p>
                     </div>
                   </div>
-                  <div class="dropdown dropdown-end">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+
+                    <div id="theme-btn" tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                       <div class="w-10 rounded-full mr-1">
                         <img
                           alt="Tailwind CSS Navbar component"
                           src="assets/theme-btn.png" />
                       </div>
                     </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                      <li>
-                        <a class="justify-between">
-                          Profile
-                          <span class="badge">New</span>
-                        </a>
-                      </li>
-                      <li><a>Settings</a></li>
-                      <li><a>Logout</a></li>
-                    </ul>
-                  </div>
+
                 </div>
               </div>
         </nav>
@@ -70,7 +58,7 @@
                 </div>
               </div>
                 <!-- discover something today section -->
-              <div class="flex items-center gap-4 px-3 py-5 rounded-lg col-span-2 bg-gradient-to-r from-blue-500 to-blue-300">
+              <div id="discover-new" class="flex items-center gap-4 px-3 py-5 rounded-lg col-span-2 bg-gradient-to-r from-blue-500 to-blue-300">
                 <img class="w-12" src="assets/board.png" alt="">
                 <p class="text-white text-xl font-medium">Discover Something New Today!</p>
               </div>
@@ -80,8 +68,8 @@
                     <i class="fa-solid fa-calendar-days text-lg"></i>
                 </button>
                 <div>
-                    <p class="text-indigo-900 text-sm">Wed,</p>
-                    <h2 class="text-md font-bold">Jul 28 2025</h2>
+                    <p id="day-top-main" class="text-indigo-900 text-sm">Wed,</p>
+                    <h2 id="date-top-main" class="text-md font-bold">Jul 28 2025</h2>
                 </div>
               </div>
             </div>
@@ -95,7 +83,7 @@
                         <div class="">
                             <button class="btn rounded-lg bg-gray-100">shopease</button>
                         </div>
-                      <h2 class="card-title text-xl my-1">Fix mobile button issue</h2>
+                      <h2 id="title-one" class="card-title text-xl my-1">Fix mobile button issue</h2>
                       <p class="bg-gray-100 p-5 text-gray-500 mb-3 rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                       <div class="flex justify-between items-end">
@@ -116,7 +104,7 @@
                         <div class="">
                             <button class="btn rounded-lg bg-gray-100">CloudSync</button>
                         </div>
-                      <h2 class="card-title text-xl my-1">Add Dark mood</h2>
+                      <h2 id="title-two" class="card-title text-xl my-1">Add Dark mood</h2>
                       <p class="bg-gray-100 p-5 text-gray-500 mb-3 rounded-md">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                       <div class="flex justify-between items-end">
                         <div>
@@ -136,7 +124,7 @@
                         <div class="">
                             <button class="btn rounded-lg bg-gray-100">SwiftPay</button>
                         </div>
-                      <h2 class="card-title text-xl my-1">Optimize Home page</h2>
+                      <h2 id="title-three" class="card-title text-xl my-1">Optimize Home page</h2>
                       <p class="bg-gray-100 p-5 text-gray-500 mb-3 rounded-md">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                       <div class="flex justify-between items-end">
                         <div>
@@ -156,7 +144,7 @@
                         <div class="">
                             <button class="btn rounded-lg bg-gray-100">Meta</button>
                         </div>
-                      <h2 class="card-title text-xl my-1">Add new emoji 🤲</h2>
+                      <h2 id="title-four" class="card-title text-xl my-1">Add new emoji 🤲</h2>
                       <p class="bg-gray-100 p-5 text-gray-500 mb-3 rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                       <div class="flex justify-between items-end">
@@ -177,7 +165,7 @@
                         <div class="">
                             <button class="btn rounded-lg bg-gray-100">Google LLC</button>
                         </div>
-                      <h2 class="card-title text-xl my-1">Integrate OpenAI API </h2>
+                      <h2 id="title-five" class="card-title text-xl my-1">Integrate OpenAI API </h2>
                       <p class="bg-gray-100 p-5 text-gray-500 mb-3 rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                       <div class="flex justify-between items-end">
@@ -198,7 +186,7 @@
                         <div class="">
                             <button class="btn rounded-lg bg-gray-100">Glassdoar</button>
                         </div>
-                      <h2 class="card-title text-xl my-1">Improve Job searching </h2>
+                      <h2 id="title-six" class="card-title text-xl my-1">Improve Job searching </h2>
                       <p class="bg-gray-100 p-5 text-gray-500 mb-3 rounded-md">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</p>
                       <div class="flex justify-between items-end">
@@ -214,19 +202,19 @@
                 </div>
              </div>
         </div>
-        <div class="bg-white h-screen rounded-lg">
+        <div class="bg-white h-screen rounded-lg overflow-y-scroll">
             <div class="mb-8 border-b border-gray-300 pb-5">
                 <div class="flex justify-center mt-10 mb-5 gap-3">
                     <img class="" src="assets/activity.png" alt="">
                     <h4 class="text-base font-medium">Activity log</h4>
                 </div>
                 <div class="flex justify-center">
-                    <button class="btn btn-primary">Clear History</button>
+                    <button id="clear-history-btn" class="btn btn-primary">Clear History</button>
                 </div>
             </div>
 
             <!-- here your history will insert -->
-            <div>
+            <div id="history-area">
                 
             </div>
         </div>
